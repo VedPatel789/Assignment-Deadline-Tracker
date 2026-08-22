@@ -66,7 +66,6 @@ public class AssignmentUI extends JFrame {
         displayArea = new JTextArea();
         displayArea.setBounds(20, 230, 540, 200);
         add(displayArea);
-
         // ADD
         addBtn.addActionListener(e -> {
             manager.add(new Assignment(
@@ -77,7 +76,6 @@ public class AssignmentUI extends JFrame {
             ));
             displayArea.setText("Assignment Added ✅");
         });
-
         // SHOW
         showBtn.addActionListener(e -> {
             StringBuilder sb = new StringBuilder();
@@ -93,13 +91,11 @@ public class AssignmentUI extends JFrame {
 
             displayArea.setText(sb.toString());
         });
-
         // DONE
         doneBtn.addActionListener(e -> {
             manager.markDone(titleField.getText());
             displayArea.setText("Marked as Done");
         });
-
         // DELETE
         delBtn.addActionListener(e -> {
             manager.delete(titleField.getText());
