@@ -12,7 +12,6 @@ public class AssignmentManager {
     public ArrayList<Assignment> getAll() {
         return list;
     }
-
     public void markDone(String title) {
         for (Assignment a : list) {
             if (a.title.equalsIgnoreCase(title)) {
