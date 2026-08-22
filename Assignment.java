@@ -3,8 +3,7 @@ public class Assignment {
     String subject;
     String deadline;
     String priority;
-    boolean completed;
-
+    boolean completed
     public Assignment(String title, String subject, String deadline, String priority) {
         this.title = title;
         this.subject = subject;
